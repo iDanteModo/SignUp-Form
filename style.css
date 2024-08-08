@@ -1,0 +1,207 @@
+@import url('../node_modules/modern-normalize/modern-normalize.css');
+
+@font-face {
+    font-family: 'Norse Bold';
+    src: url(Norse-Bold.otf);
+}
+
+:root {
+  line-height: 1.5;
+  --buttonColor-hsl: 90, 20%, 35%;
+  --inputBorder:#E5E7EB;
+  color-scheme: dark;
+
+
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+/* DANTE CODE HERE -------------------*/
+
+.logo {
+    height: 12vh;
+    width: 6vw;
+    z-index: 1; 
+}
+.graphics h2 {
+    color: whitesmoke;
+    font-family: 'Norse Bold';
+    font-size: 6vw;
+    z-index: 1;
+
+}
+.logo-graphics {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 220px;
+    background-color: rgb(0, 0, 0, 0.4);
+    width: 28.7vw;
+}
+.bg {
+    width: 40.3vw;
+    height: 100vh;
+    z-index: 0;
+    
+}
+
+.content {
+    display: flex;
+    flex: auto 1;
+    height: 100vh;
+    
+}
+
+
+
+.header { 
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    background-color: var(--buttonColor);
+    background-color: hsla(var(--buttonColor-hsl), 0.1);
+    display: flex;
+    flex-direction: column;
+    align-self:flex-start;
+    width: 71.2vw;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    
+}
+
+.header h2:nth-child(3) {
+    margin-top: 25px;
+}
+
+.header h2 {
+    padding-left: 3vw;
+    width: 750px;
+}
+
+form h1 {
+    padding-top: 30px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 0 5px -2px #888;
+    padding-left: 3vw;
+    padding-bottom: 20px;
+
+
+    
+}
+
+
+
+.form-row {
+    display: flex;
+    gap: 75px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+form label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    
+}
+
+form input {
+    border-radius: 5px;
+    border: 1px gray solid;
+    width: 300px;
+    height: 35px;
+    margin-bottom: 30px;
+}
+
+form span {
+    font-size: 0.7rem;
+    margin-top: -20px;
+    color: darkred;
+    font-weight: 200;
+}
+
+button {
+    width: 200px;
+    margin-left: 3vw;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px #596D48 solid;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    background-color: #596D48;
+
+}
+
+input:focus {
+    border: 1px solid darkblue;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    outline: none;
+  }
+
+.log {
+    display: flex;
+    padding-left: 3vw;
+}
+
+input:invalid {
+    border: none;
+    outline: 2px solid darkred;
+    border-radius: 5px;
+
+}
+
+button:hover {
+    background-color: rgb(1, 1, 49);
+
+}
